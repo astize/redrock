@@ -5,11 +5,15 @@ Inspired by the clean, minimalist interface of Mojave, Redrock aims to provide a
 ## Installation
 1. ###### Install SDDM
 This can vary, based on your distribution of linux.
+
 2. ###### Download, or clone the repository
+
 3. ###### Unpack the repository to the default SDDM theme folder
+
 Usually this is located at
 ```/usr/share/sddm/themes/```
 4. ###### Update your default.conf file
+
 	- In a terminal window, type:
 >sudo nano /usr/lib/sddm/sddm.conf.d/default.conf
 	- Locate the line that says
@@ -21,7 +25,9 @@ Usually this is located at
 >[Theme]
 >&#35; Current theme name
 >Current=redrock
+
 5. ###### Save the file (in Nano, this is done with ```Control + S```)
+
 6. ###### That's it!
 	Next time you launch SDDM, it should be running the Redrock theme. Enjoy!
 
