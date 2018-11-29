@@ -3,18 +3,18 @@
 *Redrock* gets its name from the [Red Rock Canyon State Park](https://en.wikipedia.org/wiki/Red_Rock_Canyon_National_Conservation_Area), inside the Mojave desert, and not coincidentally, the latest version of Apple's proprietary operating system is titled [macOS *Mojave*](https://www.apple.com/macos/mojave/).
 Inspired by the clean, minimalist interface of Mojave, Redrock aims to provide a near identical looking theme for the fantastic SDDM, or [Simple Desktop Display Manager](https://github.com/sddm/sddm/).
 ## Installation
-1. ###### Install SDDM
+1. ##### Install SDDM
 This can vary, based on your distribution of linux.
 
-2. ###### Download, or clone the repository
+2. ##### Download, or clone the repository
 
-3. ###### Unpack the repository to the default SDDM theme folder
+3. ##### Unpack the repository to the default SDDM theme folder
 
 Usually this is located at
 
 > /usr/share/sddm/themes/
 
-4. ###### Update your default.conf file
+4. ##### Update your default.conf file
 In a terminal window, type:
 
 >sudo nano /usr/lib/sddm/sddm.conf.d/default.conf
@@ -31,9 +31,9 @@ And append "redrock" to the `Current=` line, like so:
 >&#35; Current theme name
 >Current=redrock
 
-5. ###### Save the file (in Nano, this is done with ```Control + S```)
+5. ##### Save the file (in Nano, this is done with ```Control + S```)
 
-6. ###### That's it!
+6. ##### That's it!
 	Next time you launch SDDM, it should be running the Redrock theme. Enjoy!
 
 ## Customize the background
