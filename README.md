@@ -17,7 +17,7 @@ Usually this is located at
 4. ###### Update your default.conf file
 In a terminal window, type:
 
->sudo nano /usr/lib/sddm/sddm.conf.d/default.conf```
+>sudo nano /usr/lib/sddm/sddm.conf.d/default.conf
 
 Locate the line that says
 
@@ -25,7 +25,7 @@ Locate the line that says
 > &#35; Current theme name
 > Current=
 
-And append "redrock" to the ```Current=``` line, like so:
+And append "redrock" to the `Current=` line, like so:
 
 >[Theme]
 >&#35; Current theme name
