@@ -21,19 +21,15 @@ In a terminal window, type:
 
 Locate the line that says
 
-> [Theme]
-
-> &#35; Current theme name
-
-> Current=
+> [Theme]  
+> &#35; Current theme name  
+> Current=  
 
 And append "redrock" to the `Current=` line, like so:
 
->[Theme]
-
->&#35; Current theme name
-
->Current=redrock
+>[Theme]  
+>&#35; Current theme name  
+>Current=redrock  
 
 5. ##### Save the file (in Nano, this is done with ```Control + S```)
 
