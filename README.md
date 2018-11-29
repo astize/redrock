@@ -13,17 +13,18 @@ This can vary, based on your distribution of linux.
 Usually this is located at
 ```/usr/share/sddm/themes/```<br />
 4. ###### Update your default.conf file
+In a terminal window, type:
 
-	In a terminal window, type:
-	
-	```sudo nano /usr/lib/sddm/sddm.conf.d/default.conf```
-	
-	
-	Locate the line that says
-```[Theme]```
-```&#35; Current theme name```
-```Current=```
+>sudo nano /usr/lib/sddm/sddm.conf.d/default.conf```
+
+Locate the line that says
+
+> [Theme]
+> &#35; Current theme name
+> Current=
+
 And append "redrock" to the ```Current=``` line, like so:
+
 >[Theme]
 >&#35; Current theme name
 >Current=redrock
@@ -34,7 +35,7 @@ And append "redrock" to the ```Current=``` line, like so:
 	Next time you launch SDDM, it should be running the Redrock theme. Enjoy!
 
 ## Customize the background
-It is possible to customize the background image in Redrock by navigating to the ```redrock/images``` directory and replacing ```background.png``` with an image of your choosing.
+It is possible to customize the background image in Redrock by navigating to the `redrock/images` directory and replacing `background.png` with an image of your choosing.
 ## License
 Redrock is released under a creative commons [Attribution-ShareAlike 2.0](https://creativecommons.org/licenses/by-sa/2.0/) Generic license. This means that you are free to share Redrock, completely free of charge, as well as modify or adapt it in any way you wish, even commercially. However, if you do so, you must agree to provide attribution, not only to me, but also to the other code creators listed in the ```Attribution``` section, and you must also agree to distribute your contributions under the same license as the original works.
 
