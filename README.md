@@ -11,7 +11,9 @@ This can vary, based on your distribution of linux.
 3. ###### Unpack the repository to the default SDDM theme folder
 
 Usually this is located at
-```/usr/share/sddm/themes/```<br />
+
+> /usr/share/sddm/themes/
+
 4. ###### Update your default.conf file
 In a terminal window, type:
 
