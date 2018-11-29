@@ -11,7 +11,7 @@ This can vary, based on your distribution of linux.
 3. ###### Unpack the repository to the default SDDM theme folder
 
 Usually this is located at
-```/usr/share/sddm/themes/```
+```/usr/share/sddm/themes/```<br />
 4. ###### Update your default.conf file
 
 	In a terminal window, type:
@@ -20,10 +20,10 @@ Usually this is located at
 	
 	
 	Locate the line that says
->[Theme] <br />
->&#35; Current theme name<br />
->Current=<br />
-	And append "redrock" to the ```Current=``` line, like so:
+```[Theme]```
+```&#35; Current theme name```
+```Current=```
+And append "redrock" to the ```Current=``` line, like so:
 >[Theme]
 >&#35; Current theme name
 >Current=redrock
