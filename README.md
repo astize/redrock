@@ -14,13 +14,15 @@ Usually this is located at
 ```/usr/share/sddm/themes/```
 4. ###### Update your default.conf file
 
-	- In a terminal window, type:
->sudo nano /usr/lib/sddm/sddm.conf.d/default.conf
-	- Locate the line that says
->[Theme]
->&#35; Current theme name
->Current=
-
+	In a terminal window, type:
+	
+	```sudo nano /usr/lib/sddm/sddm.conf.d/default.conf```
+	
+	
+	Locate the line that says
+>[Theme] <br />
+>&#35; Current theme name<br />
+>Current=<br />
 	And append "redrock" to the ```Current=``` line, like so:
 >[Theme]
 >&#35; Current theme name
