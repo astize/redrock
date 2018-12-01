@@ -50,6 +50,8 @@ If you suffer poor performance with Redrock, this may be caused due to the Blur 
 >            // Change this to enable/disable blur. Default: 80
 >            radius: 80
 >        }
+
+The `background.png` file included is already blurred, and therefore should remain the same in appearance.
 	
 ## License
 Redrock is released under a creative commons [Attribution-ShareAlike 2.0](https://creativecommons.org/licenses/by-sa/2.0/) Generic license. This means that you are free to share Redrock, completely free of charge, as well as modify or adapt it in any way you wish, even commercially. However, if you do so, you must agree to provide attribution, not only to me, but also to the other code creators listed in the ```Attribution``` section, and you must also agree to distribute your contributions under the same license as the original works.
