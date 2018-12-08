@@ -60,4 +60,4 @@ For his work on the fantastic [Deepin Theme for SDDM](https://github.com/Match-Y
 **Mikkel Oscar Lyderik** <br />
 mikkeloscar@gmail.com <br />
 https://github.com/mikkeloscar <br />
-For his work on the gorgeous [Gracilis Theme for SDDM](https://github.com/mikkeloscar/sddm-gracilis).
+For his work on the gorgeous [Gracilis Theme for SDDM](https://github.com/mikkeloscar/sddm-gracilis-theme).
