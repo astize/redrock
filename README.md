@@ -25,34 +25,19 @@ Locate the line that says
 > &#35; Current theme name  
 > Current=  
 
-And append "redrock-master" to the `Current=` line, like so:
+And append "redrock" to the `Current=` line, like so:
 
 >[Theme]  
 >&#35; Current theme name  
->Current=redrock-master
+>Current=redrock  
 
 5. ##### Save the file (in Nano, this is done with ```Control + S```)
 
-6. (Optional) You may need to modify user permissions of the redrock-master folder so that SDDM can read the folder. 
-
-7. ##### That's it!
+6. ##### That's it!
 	Next time you launch SDDM, it should be running the Redrock theme. Enjoy!
 
 ## Customize the background
 It is possible to customize the background image in Redrock by navigating to the `redrock/images` directory and replacing `background.png` with an image of your choosing.
-## Performance Issues
-If you suffer poor performance with Redrock, this may be caused due to the Qt Blur component. If you prefer, you can disable this by simply deleting the following section in `main.qml`
-
->        FastBlur {
->            id: bgBlur
->            anchors.fill: mainFrameBackground
->            source: mainFrameBackground
->            // Change this to enable/disable blur. Default: 80
->            radius: 80
->        }
-
-The `background.png` file included is already blurred, and therefore should remain the same in appearance. The Qt Blur was included for user convenience when using custom background images, however is not necessary.
-	
 ## License
 Redrock is released under a creative commons [Attribution-ShareAlike 2.0](https://creativecommons.org/licenses/by-sa/2.0/) Generic license. This means that you are free to share Redrock, completely free of charge, as well as modify or adapt it in any way you wish, even commercially. However, if you do so, you must agree to provide attribution, not only to me, but also to the other code creators listed in the ```Attribution``` section, and you must also agree to distribute your contributions under the same license as the original works.
 
