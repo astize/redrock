@@ -1,10 +1,8 @@
 /***********************************************************************/
 
 import QtQuick 2.0
-import QtGraphicalEffects 1.0
 import SddmComponents 2.0
-
-import "Components"
+import "components"
 
 Rectangle {
     id: root
@@ -42,25 +40,6 @@ Rectangle {
         }
 
     ]
-    transitions: Transition {
-        PropertyAnimation { duration: 100; properties: "opacity";  }
-        PropertyAnimation { duration: 300; properties: "radius"; }
-    }
-
-
-    Repeater {
-        model: screenModel
-        Background {
-            x: geometry.x; y: geometry.y; width: geometry.width; height:geometry.height
-            source: config.background
-            fillMode: Image.Tile
-            onStatusChanged: {
-                if (status == Image.Error && source !== config.defaultBackground) {
-                    source = config.defaultBackground
-                }
-            }
-        }
-    }
 
     Item {
         id: mainFrame
@@ -70,15 +49,9 @@ Rectangle {
         Image {
             id: mainFrameBackground
             anchors.fill: parent
-            source: "images/background.png"
+            source: "images/background.jpg"
         }
-        FastBlur {
-            id: bgBlur
-            anchors.fill: mainFrameBackground
-            source: mainFrameBackground
-            // Change this to enable/disable blur. Default: 80
-            radius: 80
-        }
+
 
         Item {
             id: centerArea
@@ -151,7 +124,6 @@ Rectangle {
                 width: 50
                 source: "images/restart.png"
                 onClicked: sddm.reboot()
-                KeyNavigation.backtab: password; KeyNavigation.tab: session
             }
 
             Text {
@@ -183,38 +155,6 @@ Rectangle {
             }
         }
     }
-
-            Text {
-                id: dateText
-                anchors {
-                    left: parent.left
-                    leftMargin: hMargin
-                    bottom: parent.bottom
-                    bottomMargin: vMargin
-                }
-
-                font.pointSize: 18
-                color: textColor
-
-                function updateDate() {
-                    text = new Date().toLocaleString(Qt.locale("en_US"), "yyyy-MM-dd dddd")
-                }
-            }
-
-            Timer {
-                interval: 1000
-                repeat: true
-                running: true
-                onTriggered: {
-                    timeText.updateTime()
-                    dateText.updateDate()
-                }
-            }
-
-            Component.onCompleted: {
-                timeText.updateTime()
-                dateText.updateDate()
-            }
         }
         Rectangle {
             id: actionBar
@@ -266,7 +206,6 @@ Rectangle {
                     hoverColor: "#77000000"
                     anchors.verticalCenter: parent.verticalCenter
                     arrowIcon: "images/angle-down.png"
-                    KeyNavigation.backtab: session; KeyNavigation.tab: name
                 }
                 InlineClock {
                 }
