@@ -49,7 +49,7 @@ Rectangle {
         Image {
             id: mainFrameBackground
             anchors.fill: parent
-            source: "images/background.jpg"
+            source: "images/background.png"
         }
 
 
